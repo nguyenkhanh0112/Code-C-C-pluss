@@ -1,0 +1,26 @@
+{
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "baI7.C": "cpp",
+        "stdio.h": "c",
+        "string.h": "c",
+        "BAI6.C": "cpp",
+        "math.h": "c",
+        "ctype.h": "c",
+        "random": "c",
+        "iostream": "cpp",
+        "*.tcc": "cpp",
+        "ostream": "cpp",
+        "iosfwd": "cpp",
+        "new": "cpp",
+        "cmath": "cpp",
+        "complex": "cpp",
+        "memory_resource": "cpp",
+        "type_traits": "cpp",
+        "chrono": "cpp",
+        "limits": "cpp",
+        "valarray": "cpp",
+        "fstream": "cpp",
+        "string": "cpp"
+    }
+}

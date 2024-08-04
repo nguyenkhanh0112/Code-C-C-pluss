@@ -1,0 +1,43 @@
+lập trình hướng đối tượng có 4 tính chất 
+
+1. tính trừu tượng: 
+ -   là quá trình chúng ta đi đơn giản hóa một đối tương - không cho phép người dùng hay các đối tượng tuy xuất trực tiếp để thay đổi dữ liệu của class.
+    + xác định các thuộc tính và phương thức cần thiết của đối tượng đó để đáp ứng yêu cầu 
+      cần thiết của chương trình tại thời điểm hiện tại .
+    + sàn lọc ra các tính chất và hành vi cốt lõi của 1 đối tượng.
+2. tính đóng gói: 
+  - kn: là đặc trung của phương pháp lập trình hướng đối tượng - không cho phép người dùng hay các đối tượng truy xuất trực tiếp để thay đổi dữ liệu của class.
+  - 3 từ khóa 
+    + public: nhưng cái phuộc tính hay phương thức được khai báo với từ khóa sẽ có phạm vi hoạt động bên trong và bên ngoài class
+    và trên toàn bộ chương trình.
+    + private: nhưng cái phuộc tính hay phương thức được khai báo với từ khóa sẽ có phạm vi hoạt động bên trong class.
+    + proteced: nhưng cái phuộc tính hay phương thức được khai báo với từ khóa sẽ có phạm vi hoạt động bên trong class và các class kế thừa từ nó.
+  - đặc điêm:
+    1. tạo ra cơ chế để ngăn ngừa việc gọi phương thức của lớp này tác động hay truy xuất dữ liệu của đối tượng thuộc về lớp khác.
+    2. người lập trình có thể dựa vào cơ chế này để ngăn ngừa việc gán giá trị không hợp lệ vào thành phần dữ liệu của mỗi đối tượng 
+    3. ko cho truy xuất 1 cách tùy tiện dữ liệu của class.
+3. tính kế thừa:
+  -kn: là sự trao đổi thông tin từ thế hệ này sang thế hệ khác <=> sự trao đổi thông tin từ classs này sang class kia 
+       lớp cha mà có lớp con kế thừa lại thì các thuộc tính của lớp cha sẽ để wor tầm vực PROTECTED
+      + PROTECTED: khi ta khai báo các thuộc tính hay phương thức với từ khóa này thì nó sé có phạm vi hoạt động bên trong lớp đó và ở các lớp con kế thừa từ nó 
+4. tính đa hình:
+ 1. phuong thức ảo 
+  - Những phương thức ở lớp cha được khai báo với từ khóa "virtual" - thì các lớp con kế thừa nó cũng sẽ cài đặt cái phương thức "trùng tên " của lớp cha - để cho phép các lớp con có thể 
+  nạp chồng lại được - định nghĩa lại các phương thức của lớp cha 
+  - nếu như cac phương thức của lớp cha không có từ khóa "virtual" thì khi chúng ta new ra 1 đối tượng con bất kì - thì nó xe mặc định chạy về phương thức trùng tên của lớp cha 
+  TÁC DUNG CỦA TỪ KHÓA "virtual"
+  - Nếu như các phương thức của lớp cha có khai báo từ khóa "virtual" thì khi new ra 1 cái đối tượng con nào đó bất kì thì khi đó nó sẽ chạy vào cái phương thức trùng tên của lớp con đó - nó 
+  cho chúng ta gọi lại phương thức trùng tên của lớp con 
+  * CÚ PHÁP KHAI BÁO PHƯƠNG THỨC ẢO 
+  <virtual><kiểu dữ liệu><tên phương thức>(các tham số truyền vào nếu có);
+
+ 2.Phương thức thuần ảo
+  - Những phương thức sẽ được khai báo ở lớp cha - còn việc định nghĩa sẽ do các lớp con kế thừa từ nó đảm nhận - bắt buộc
+   * CÚ PHÁP KHAI BÁO PHƯƠNG THỨC THUẦN ẢO 
+  <virtual><kiểu dữ liệu><tên phương thức>(các tham số truyền vào nếu có)=0;
+  LƯU Ý 
+    - Nếu ở lớp cha có khai báo phương thức thuần ảo - thì các lớp con kế thừa từ cái lớp cha - thì các lớp con kế thừa từ lớp cha đó bắt buộc phải đi định nghĩa lại phương thức thuần ảo của 
+    lớp cha đó - nếu lớp con mà không định nghĩa => sẽ bị "Error!!"
+  
+  * DÙNG PHƯƠNG THỨC ẢO KHI ở lớp chả có thông tin chung để tính toán 
+  * DÙNG PHƯƠNG THỨC TUẦN THẢO KHI ở lớp cha không có thong tin chung để tính toán
